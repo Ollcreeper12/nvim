@@ -4,13 +4,21 @@
 
 local opt = vim.opt
 
+-- Code Folding
+opt.foldenable = true
+opt.foldlevel = 99
+opt.foldlevelstart = 99
+opt.foldcolumn = "1"
+opt.foldmethod = "expr"
+opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+
 -- Ln Num --
 opt.number = true
 opt.relativenumber = true
 
 -- Indentation --
 opt.expandtab = true
--- opt.smartindent = true
+opt.smartindent = true
 opt.tabstop = 2
 opt.shiftwidth = 2
 opt.softtabstop = 2
