@@ -23,6 +23,8 @@ map("n", "<leader>e", function()
 	end
 end, { desc = "Toogle FM" })
 
+map("n", "<leader>/", "<cmd>Inscom<CR>", {})
+
 map("n", "<leader>fp", "<cmd>Telescope live_grep<CR>", { desc = "Find Files In Currant Dir" })
 map("n", "<leader>fh", "<cmd>Telescope help_tags<CR>", { desc = "Find In Nvim Docs" })
 map("n", "<leader>ff", "<cmd>Telescope find_files<CR>", { desc = "Find In Nvim Docs" })
