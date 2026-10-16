@@ -9,4 +9,9 @@ return {
 		i(1, "  Equ"),
 		t({ "", "\\end{align*}" }),
 	}),
+	s("@ent", {
+		t({ "\\begin{document}" }),
+		i(1, ""),
+		t({ "", "\\end{document}" }),
+	}),
 }
